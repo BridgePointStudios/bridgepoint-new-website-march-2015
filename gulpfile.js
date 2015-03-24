@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     browserify = require('gulp-browserify'),
-    sass = require('gulp-ruby-sass');
+    compass = require('gulp-compass')
 
 // Scripts Task
 // Uglifies
@@ -18,6 +18,11 @@ gulp.task('scripts', function(){
 // Styles Task
 // Builds Sass
 gulp.task('styles', function(){
-    return sass('components/scss/')
-                .pipe(gulp.dest('builds/production/css/'));
+    gulp.src('components/scss/style.scss')
+        .pipe(compass({
+            sass: 'components/scss',
+            images: 'builds/development/images',
+            style: 'expanded'
+        }))
+        .pipe(gulp.dest('builds/development/css'));
 });

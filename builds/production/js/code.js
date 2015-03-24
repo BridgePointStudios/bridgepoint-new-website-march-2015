@@ -1,0 +1,1 @@
+$(".carousel").carousel({interval:4e3,pause:"false"}),$(document).on("click",".navbar-collapse.in",function(a){$(a.target).is("a")&&$(this).collapse("hide")});

@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     uglify = require('gulp-uglify'),
+    concat = require('gulp-concat'),
     sass = require('gulp-ruby-sass');
 
 // Scripts Task
@@ -10,4 +11,12 @@ gulp.task('scripts', function(){
                .pipe(uglify()
                  .on('error', gutil.log))
                .pipe(gulp.dest('builds/production/js'));
+});
+
+// Styles Task
+// Builds Sass
+gulp.task('styles', function(){
+    return sass('components/scss/')
+            .on('error', gutil.log)
+        .pipe(gulp.dest('builds/production/css/'));
 });

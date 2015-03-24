@@ -11,7 +11,7 @@ gulp.task('scripts', function(){
     return gulp.src('components/js/*.js')
                .pipe(uglify()
                  .on('error', gutil.log))
-               .pipe('browserify')
+               .pipe(browserify())
                .pipe(gulp.dest('builds/production/js'));
 });
 
@@ -19,6 +19,5 @@ gulp.task('scripts', function(){
 // Builds Sass
 gulp.task('styles', function(){
     return sass('components/scss/')
-            .on('error', gutil.log)
-        .pipe(gulp.dest('builds/production/css/'));
+                .pipe(gulp.dest('builds/production/css/'));
 });

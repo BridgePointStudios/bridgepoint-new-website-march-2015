@@ -25,4 +25,9 @@ gulp.task('styles', function(){
         .pipe(gulp.dest('builds/development/css'));
 });
 
-gulp.task('default', ['styles', 'scripts']);
+gulp.task('watch', function() {
+        gulp.watch('components/js/*.js', ['scripts']);
+        gulp.watch('components/scss/*.scss', ['styles'])
+});
+
+gulp.task('default', ['styles', 'scripts', 'watch']);

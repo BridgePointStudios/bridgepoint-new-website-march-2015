@@ -9,10 +9,8 @@ var gulp = require('gulp'),
 // Uglifies
 gulp.task('scripts', function(){
     return gulp.src('components/js/*.js')
-               .pipe(uglify()
-                 .on('error', gutil.log))
                .pipe(browserify())
-               .pipe(gulp.dest('builds/production/js'));
+               .pipe(gulp.dest('builds/development/js'));
 });
 
 // Styles Task
@@ -26,3 +24,5 @@ gulp.task('styles', function(){
         }))
         .pipe(gulp.dest('builds/development/css'));
 });
+
+gulp.task('default', ['styles', 'scripts']);

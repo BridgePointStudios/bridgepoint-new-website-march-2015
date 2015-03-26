@@ -81,6 +81,12 @@ footer{
 	img.logo {
 		max-width: 500px;
 	}
+	header nav.navbar-fixed-top{
+		padding: 0 0 3px 0;
+		border-bottom: 1px solid $blue;
+		transition: all .5s ease-out;
+	}
+
 }
 
 @media (max-width: 550px){

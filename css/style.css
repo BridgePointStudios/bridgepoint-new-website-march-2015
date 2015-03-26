@@ -6,6 +6,7 @@
 
 header .navbar {
   padding: 20px 0;
+  transition: all .5s ease-out;
 }
 
 .navbar {
@@ -31,12 +32,26 @@ header .navbar {
   font-weight: 400;
 }
 
+.navbar-default .navbar-nav > li.active > a {
+  border-bottom: 2px solid #262262;
+  background-color: #FEC77C;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  border-bottom: 2px solid #262262;
+}
+
 header .navbar-toggle {
   background-color: #262262;
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
+}
+
+nav.inbody {
+  padding: 0 0 3px 0;
+  border-bottom: 1px solid #262262;
 }
 
 .carousel {
@@ -239,6 +254,12 @@ footer {
 
   img.logo {
     max-width: 500px;
+  }
+
+  header nav.navbar-fixed-top {
+    padding: 0 0 3px 0;
+    border-bottom: 1px solid #262262;
+    transition: all .5s ease-out;
   }
 }
 @media (max-width: 550px) {

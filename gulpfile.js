@@ -18,7 +18,7 @@ gulp.task('scripts', function(){
 // Styles Task
 // Builds CSS from SCSS
 gulp.task('styles', function(){
-    gulp.src('components/scss/style.scss')
+    gulp.src('components/scss/*.scss')
         .pipe(compass({
             sass: 'components/scss',
             images: 'builds/development/images',

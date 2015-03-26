@@ -1,0 +1,28 @@
+#testimonials {
+	background-color: rgb(254,255,239); // Old browsers
+	@include filter-gradient(#feffef, #a0d8ef, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  rgba(254,255,239,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%));
+}
+
+blockquote {
+	border-left: 5px solid $blue;
+}
+
+.client-image {
+	float: left;
+	margin: 10px 25px 60px;
+}
+
+.client-image img {
+	margin: 0 auto;
+	display: block;
+}
+
+.client, .customer {
+	font-weight: 700;
+}
+
+
+.customer {
+	text-align: center;
+}

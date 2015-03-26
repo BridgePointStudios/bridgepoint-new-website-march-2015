@@ -146,8 +146,12 @@ header .navbar-default .navbar-toggle .icon-bar{
 /**   **/
 
 img.logo {
-	max-width: 100%;
+
 	margin-top: 30px;
+	max-width: 700px;
+
+	margin: auto;
+	display: block;
 }
 
 .portfolio{
@@ -201,12 +205,32 @@ footer{
 		width: 100%;
 		margin: 10px 25px 20px;
 	}
+
 }
 
-@media (max-width: 500px){
+@media (max-width: 768px){
+	.portfolio img {
+		max-width: 400px;
+		display:block;
+		margin: auto;
+	}
+	img.logo {
+		max-width: 500px;
+	}
+
+
+}
+
+@media (max-width: 550px){
 	.navbar-default .navbar-brand {
 		font-size: 22px;
 	}
+	.portfolio img, img.logo{
+		max-width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
 }
 
 @media only screen

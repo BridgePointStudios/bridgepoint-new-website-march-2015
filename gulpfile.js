@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     connect = require('gulp-connect');
 
 // Scripts Task
-// Uglifies
+// includes jQuery when piped through browserify
 gulp.task('scripts', function(){
     return gulp.src('components/js/*.js')
                .pipe(browserify())
@@ -16,7 +16,7 @@ gulp.task('scripts', function(){
 });
 
 // Styles Task
-// Builds Sass
+// Builds CSS from SCSS
 gulp.task('styles', function(){
     gulp.src('components/scss/style.scss')
         .pipe(compass({
@@ -29,7 +29,7 @@ gulp.task('styles', function(){
         .pipe(connect.reload());
 });
 
-//
+// Reload when html changes
 gulp.task('html', function(){
     gulp.src('builds/development/*.html')
         .pipe(connect.reload());

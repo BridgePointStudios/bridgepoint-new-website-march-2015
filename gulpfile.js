@@ -24,7 +24,14 @@ gulp.task('styles', function(){
             images: 'builds/development/images',
             style: 'expanded'
         }))
+        .on('error', gutil.log)
         .pipe(gulp.dest('builds/development/css'))
+        .pipe(connect.reload());
+});
+
+//
+gulp.task('html', function(){
+    gulp.src('builds/development/*.html')
         .pipe(connect.reload());
 });
 
@@ -33,7 +40,7 @@ gulp.task('styles', function(){
 gulp.task('watch', function() {
         gulp.watch('components/js/*.js', ['scripts']);
         gulp.watch('components/scss/*.scss', ['styles']);
-
+        gulp.watch('builds/development/*.html', ['html']);
 });
 
 

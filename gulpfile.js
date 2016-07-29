@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 // includes jQuery when piped through browserify
 gulp.task('scripts', function(){
     return gulp.src('components/js/*.js')
-               .pipe(browserify())
+               
                .pipe(gulp.dest('builds/development/js'))
                .pipe(connect.reload());
 });

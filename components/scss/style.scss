@@ -33,8 +33,12 @@ h1, h2, h3, h4, h5, h6{
 	margin: 15px 0;
 }
 
-h2, h3 {
+h2, h3, h4 {
 	text-align: center;
+}
+
+a {
+	color: $blue;
 }
 
 .page {
@@ -42,7 +46,7 @@ h2, h3 {
 	border-top: 80px solid $blue;
 }
 
-.page h2, .page h3{
+.page-title, .page-sub-title{
 	margin-bottom: 30px;
 }
 

@@ -1,4 +1,3 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 $(function() {
     "use strict"
 
@@ -52,4 +51,57 @@ $(document).on('click','.navbar-collapse.in',function(e) {
     }
 });
 
-},{}]},{},[1])
+// help with scrolling to full portfolio entries when intro is clicked
+function scrollToAnchor(aid){
+var aTag = $("a[name='"+ aid +"']");
+$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+$('.portfolio-tn-valley-ent').on('click', function(e) {
+    $('.full-portfolio').css ( "display", "none");
+    $('#full-portfolio-tn-valley-ent').css ( "display", "block" );
+    $('.full-portfolio').css ( "border-top", "80px solid #262262" );
+    scrollToAnchor('full-portfolio-tn-valley-ent');
+});
+
+$('.portfolio-shoals-paws').on('click', function(e) {
+    $('.full-portfolio').css ( "display", "none");
+    $('#full-portfolio-shoals-paws').css ( "display", "block" );
+    $('.full-portfolio').css ( "border-top", "80px solid #262262" );
+    scrollToAnchor('full-portfolio-shoals-paws');
+});
+
+$('.portfolio-boosting-others').on('click', function(e) {
+    $('.full-portfolio').css ( "display", "none");
+    $('#full-portfolio-boosting-others').css ( "display", "block" );
+    $('.full-portfolio').css ( "border-top", "80px solid #262262" );
+    scrollToAnchor('full-portfolio-boosting-others');
+});
+
+$('.portfolio-muscle-shoals-artists').on('click', function(e) {
+    $('.full-portfolio').css ( "display", "none");
+    $('#full-portfolio-muscle-shoals-artists').css ( "display", "block" );
+    $('.full-portfolio').css ( "border-top", "80px solid #262262" );
+    scrollToAnchor('full-portfolio-muscle-shoals-artists');
+});
+
+$('.portfolio-cox-creek-family-dentistry').on('click', function(e) {
+    $('.full-portfolio').css ( "display", "none");
+    $('#full-portfolio-cox-creek-family-dentistry').css ( "display", "block" );
+    $('.full-portfolio').css ( "border-top", "80px solid #262262" );
+    scrollToAnchor('full-portfolio-cox-creek-family-dentistry');
+});
+
+$('.portfolio-your-success-insight').on('click', function(e) {
+    $('.full-portfolio').css ( "display", "none");
+    $('#full-portfolio-your-success-insight').css ( "display", "block" );
+    $('.full-portfolio').css ( "border-top", "80px solid #262262" );
+    scrollToAnchor('full-portfolio-your-success-insight');
+});
+
+$('.portfolio-germantown-speech-language').on('click', function(e) {
+    $('.full-portfolio').css ( "display", "none");
+    $('#full-portfolio-germantown-speech-language').css ( "display", "block" );
+    $('.full-portfolio').css ( "border-top", "80px solid #262262" );
+    scrollToAnchor('full-portfolio-germantown-speech-language');
+});

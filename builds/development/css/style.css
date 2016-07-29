@@ -59,15 +59,6 @@ nav.inbody {
 
 .carousel {
   padding-bottom: 40px;
-  background-color: #a0d8ef;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFA0D8EF', endColorstr='#FFFEFFFF');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2EwZDhlZiIvPjxzdG9wIG9mZnNldD0iNjUlIiBzdG9wLWNvbG9yPSIjZGRmMWY5Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmVmZmZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a0d8ef), color-stop(65%, #ddf1f9), color-stop(100%, #feffff));
-  background-image: -moz-linear-gradient(top, #a0d8ef 0%, #ddf1f9 65%, #feffff 100%);
-  background-image: -webkit-linear-gradient(top, #a0d8ef 0%, #ddf1f9 65%, #feffff 100%);
-  background-image: linear-gradient(to bottom, #a0d8ef 0%, #ddf1f9 65%, #feffff 100%);
 }
 
 .carousel-inner > .item > a > img, .carousel-inner > .item > img {
@@ -84,6 +75,12 @@ nav.inbody {
 
 .carousel p {
   text-align: center;
+}
+
+.carousel h2 {
+  font-size: 1.8em;
+  min-height: 65px;
+  line-height: 1.5em;
 }
 
 /* fade on slider */
@@ -151,6 +148,11 @@ img.logo {
   margin: 15px auto;
 }
 
+.r-emphesis {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
 .portfolio {
   margin-bottom: 50px;
   text-align: center;
@@ -162,18 +164,68 @@ img.logo {
 
 .portfolio img {
   max-width: 100%;
+  height: 233px;
+  margin: 15px 0;
 }
 
-#testimonials {
-  background-color: #feffef;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFEFFEF', endColorstr='#FFA0D8EF');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmZlZiIvPjxzdG9wIG9mZnNldD0iMzUlIiBzdG9wLWNvbG9yPSIjZGRmMWY5Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYTBkOGVmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #feffef), color-stop(35%, #ddf1f9), color-stop(100%, #a0d8ef));
-  background-image: -moz-linear-gradient(top, #feffef 0%, #ddf1f9 35%, #a0d8ef 100%);
-  background-image: -webkit-linear-gradient(top, #feffef 0%, #ddf1f9 35%, #a0d8ef 100%);
-  background-image: linear-gradient(to bottom, #feffef 0%, #ddf1f9 35%, #a0d8ef 100%);
+h2.portfolio-page-title {
+  margin-bottom: 0;
+}
+
+.full-portfolio {
+  display: none;
+  border-top: none;
+}
+
+.full-portfolio img {
+  margin: 15px  auto;
+  display: block;
+  max-width: 100%;
+}
+
+.portfolio-title {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.portfolio-body {
+  padding-top: 20px;
+}
+
+.portfolio-url {
+  font-style: italic;
+  margin-top: 0;
+}
+
+.image-title {
+  margin-top: 0;
+}
+
+.callout-title, .callout-heading {
+  margin-bottom: 20px;
+}
+
+.callout-link {
+  display: inline-block;
+  background-color: #262262;
+  color: #FEC77C;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+.callout-link:hover {
+  color: #FEC77C;
+  text-decoration: underline;
+}
+
+.callout-button {
+  width: auto !important;
+  float: none;
+  text-align: center;
+}
+
+.click-notice {
+  text-align: center;
 }
 
 blockquote {
@@ -182,12 +234,16 @@ blockquote {
 
 .client-image {
   float: left;
-  margin: 10px 25px 60px;
+  margin: 10px 25px 100px;
 }
 
 .client-image img {
   margin: 0 auto;
   display: block;
+}
+
+.client {
+  margin-bottom: 12px;
 }
 
 .client, .customer {
@@ -196,6 +252,7 @@ blockquote {
 
 .customer {
   text-align: center;
+  margin-top: 5px;
 }
 
 body {
@@ -211,8 +268,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 15px 0;
 }
 
-h2, h3 {
+h2, h3, h4 {
   text-align: center;
+}
+
+a {
+  color: #262262;
 }
 
 .page {
@@ -220,8 +281,12 @@ h2, h3 {
   border-top: 80px solid #262262;
 }
 
-.page h2, .page h3 {
+.page-title, .page-sub-title {
   margin-bottom: 30px;
+}
+
+.page-sub-title {
+  font-size: 23px;
 }
 
 footer {

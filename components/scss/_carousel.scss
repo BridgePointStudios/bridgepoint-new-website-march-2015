@@ -2,10 +2,6 @@
 	padding-bottom: 40px;
 	// needs latest Compass, add '@import "compass"' to your scss
 	// needs latest Compass, add '@import "compass"' to your scss
-	background-color: rgb(160,216,239); // Old browsers
-	@include filter-gradient(#a0d8ef, #feffff, vertical); // IE6-9
-	@include background-image(linear-gradient(top,  rgba(160,216,239,1) 0%,rgba(221,241,249,1) 65%,rgba(254,255,255,1) 100%));
-
 
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
@@ -24,7 +20,11 @@
 	text-align: center;
 }
 
-
+.carousel h2 {
+	font-size: 1.8em;
+	min-height: 65px;
+	line-height: 1.5em;
+}
 
 
 /* fade on slider */
